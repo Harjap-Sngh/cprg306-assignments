@@ -20,7 +20,7 @@ const CategoryGroup = () => {
         itemsInCategory.sort((a, b) => a.name.localeCompare(b.name));
         return (
           <div key={category}>
-            <h1>{category}</h1>
+            <h1 className="capitalize">{category}</h1>
             <div>
               {itemsInCategory.map((item) => {
                 return (
